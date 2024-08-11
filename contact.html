@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
-  <link rel="stylesheet" href="/main.css">
-  <script src="/scripts/main.js" defer></script>
-  <title>Contact Me</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self';"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <script src="/scripts/main.js" defer></script>
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header id="header" class="container"></header>
 
-  <header id="header"></header>
+    <main class="container">
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li>Github: notosarme</li>
+          <li>Instagram: notosarme</li>
+          <li>LinkedIn: teagan-clayton</li>
+          <li>Email: clayton.tjc@gmail.com</li>
+        </ul>
+        <div>
+          <form action="https://formspree.io/f/xnnavond" method="POST">
+            <label>
+              Your email:
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
-  <main class="container">
-    <section id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li>Github: notosarme</li>
-        <li>Instagram: notosarme</li>
-        <li>LinkedIn: teagan-clayton</li>
-        <li>Email: clayton.tjc@gmail.com</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer id="footer"></footer>
-  
-</body>
+    <footer id="footer" class="container"></footer>
+  </body>
 </html>
