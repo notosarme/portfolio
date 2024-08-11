@@ -50,6 +50,13 @@ section {
   padding-top: 1em;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
 /* HEADER */
 
 header,

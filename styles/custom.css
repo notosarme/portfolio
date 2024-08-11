@@ -4,12 +4,27 @@
   width: 300px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  height: 100%;
 }
 .card img {
   width: 100%;
   height: auto;
 }
+.card-container h3 {
+  font-size: 1rem;
+}
+
 .card-container {
-  padding: 15px;
+  padding: .5em;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .card {
+    width: 350px;
+  }
 }

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/main.css">
+  <script src="/scripts/customElements.js" defer></script>
   <script src="/scripts/main.js" defer></script>
   <title>Latest Works</title>
 </head>
@@ -18,7 +19,20 @@
   <main class="container">
     <section id="projects">
       <h2>Projects</h2>
-      <div class="gallery"></div>
+      <div class="gallery">
+        <highlight-card 
+          image-src="https://via.placeholder.com/400x200" 
+          alt="Placeholder Image" 
+          heading="Placeholder Image" 
+          text="This is a test">
+        </highlight-card>
+        <highlight-card 
+          image-src="https://via.placeholder.com/400x200" 
+          alt="Placeholder Image" 
+          heading="Placeholder Image" 
+          text="This is a test">
+        </highlight-card>
+      </div>
     </section>
     <section id="academic">
       <h2>Academic Work</h2>
