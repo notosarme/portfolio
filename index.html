@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/scripts/customElements.js" defer></script>
-  <!-- <script src="/scripts/main.js" defer></script> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/scripts/main.js" defer></script>
   <title>Teagan Clayton</title>
 </head>
 <body>
 
-  <header></header>
-  <app-header></app-header>
-  <!-- <?php include "./header.html" ?> -->
+  <header id="header"></header>
 
   <section id="about">
     <h2>About</h2>
@@ -44,7 +43,7 @@
     <p><a href="https://nownownow.com/about">Why now?</a></p>
   </section>
 
-  <footer></footer>
+  <footer id="footer"></footer>
 
 </body>
 </html>

@@ -1,25 +1,14 @@
-function fillHeader() {
-  fetch("/templates/header.html")
-    .then((response) => {
-      return response.text();
+function loadTemplate(file, insertID) {
+  fetch(file)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById(insertID).innerHTML = data;
     })
-    .then((data) => {
-      document.querySelector("header").innerHTML = data;
-    });
+    .catch(er => console.error('Error fetching HTML: ' + er));
 }
 
-function fillFooter() {
-  fetch("/templates/footer.html")
-    .then((response) => {
-      return response.text();
-    })
-    .then((data) => {
-      document.querySelector("footer").innerHTML = data;
-    });
-}
-
-document.addEventListener("DOMContentLoaded", (ev) => {
+document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
-  fillHeader();
-  fillFooter();
+  loadTemplate('/templates/header.html', 'header');
+  loadTemplate('/templates/footer.html', 'footer');
 });
