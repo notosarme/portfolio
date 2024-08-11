@@ -32,13 +32,13 @@ body {
     "footer";
 }
 
-a {
+/* a {
   color: var(--main-highlight);
 }
 
 a:hover {
   color: var(--main-highlight-dark);
-}
+} */
 
 .container {
   width: auto;
@@ -50,11 +50,17 @@ section {
   padding-top: 1em;
 }
 
+section ul li {
+  line-height: 1.5;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
+  height: fit-content;
+  padding-bottom: 2em;
 }
 
 /* HEADER */

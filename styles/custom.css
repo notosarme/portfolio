@@ -4,18 +4,16 @@
   width: 300px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  height: fit-content;
+  padding: .75em;
 }
 .card img {
   width: 100%;
   height: auto;
+  object-fit: fill;
 }
 .card-container h3 {
   font-size: 1rem;
-}
-
-.card-container {
-  padding: .5em;
 }
 
 .card a {

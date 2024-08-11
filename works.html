@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/styles/main.css">
   <script src="/scripts/customElements.js" defer></script>
   <script src="/scripts/main.js" defer></script>
+
   <title>Latest Works</title>
 </head>
 <body>
@@ -21,16 +24,18 @@
       <h2>Projects</h2>
       <div class="gallery">
         <highlight-card 
-          image-src="https://via.placeholder.com/400x200" 
-          alt="Placeholder Image" 
-          heading="Placeholder Image" 
-          text="This is a test">
+          link="/works/casm-wayfinding.html"
+          image-src="/assets/wayfinding-0.png" 
+          alt="Screenshot of the app" 
+          heading="Wayfinding App for the Visually Impaired" 
+          text="PWA developed for the Canadian Aviation and Space Museum.">
         </highlight-card>
         <highlight-card 
-          image-src="https://via.placeholder.com/400x200" 
-          alt="Placeholder Image" 
-          heading="Placeholder Image" 
-          text="This is a test">
+          link="/works/indie-artists.html"
+          image-src="/assets/indie-0.png" 
+          alt="Screenshot of the website" 
+          heading="The Online Indie Artists Club" 
+          text="Created a website for a volunteer-ran online artist collective.">
         </highlight-card>
       </div>
     </section>
@@ -38,10 +43,11 @@
       <h2>Academic Work</h2>
       <p>A WIP section right now. Some major school projects I've completed are:</p>
       <ul>
-        <li>A wishlist creating app done in React, React Native, and Flutter (to learn the differences).</li>
-        <li>A movie voting app created in Flutter, where you enter a code, connect to another instance, and swipe until you find a match.</li>
-        <li>An iOS app created in Swift that uses the Ottawa public building JSON list to allow users to find places to visit based on category, amenity, or location.</li>
-        <li>A .NET Maui program that allows users to upload or take pictures, and uses AI to read the image and use TTS to explain what it is.</li>
+        <li>Portfolio recreation made in Astro.</li>
+        <li>Wishlist creating app done in React, React Native, and Flutter (to learn the differences).</li>
+        <li>Movie voting app created in Flutter, where you enter a code, connect to another instance, and swipe until you find a match.</li>
+        <li>iOS app created in Swift that uses the Ottawa public building JSON list to allow users to find places to visit based on category, amenity, or location.</li>
+        <li>.NET Maui program that allows users to upload or take pictures, and uses AI to read the image and use TTS to explain what it is.</li>
       </ul>
     </section>
   </main>
