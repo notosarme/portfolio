@@ -32,6 +32,10 @@ body {
     "footer";
 }
 
+img {
+  max-width: 100%;
+}
+
 /* a {
   color: var(--main-highlight);
 }
@@ -50,7 +54,8 @@ section {
   padding-top: 1em;
 }
 
-section ul li {
+section ul li,
+section ol li {
   line-height: 1.5;
 }
 
@@ -61,6 +66,12 @@ section ul li {
   gap: 1em;
   height: fit-content;
   padding-bottom: 2em;
+}
+
+.project img {
+  border: 3px solid var(--main-highlight-dark);
+  border-radius: 8px;
+  margin-bottom: 1em;
 }
 
 /* HEADER */
