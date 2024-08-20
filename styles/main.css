@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -143,4 +145,18 @@ footer {
   .container {
     width: 800px;
   }
+}
+
+/* Descriptive Lists */
+dt {
+  font-weight: bold;
+}
+
+dl ul {
+  list-style: circle;
+  /* padding: 0; */
+}
+
+dd p {
+  margin: 0;
 }

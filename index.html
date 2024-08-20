@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/styles/main.css">
-  <script src="/scripts/customElements.js" defer></script>
-  <script src="/scripts/main.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; 
+      script-src 'self'; 
+      connect-src 'self'; 
+      img-src 'self'; 
+      font-src 'self' https://fonts.gstatic.com;
+      style-src 'self' https://fonts.googleapis.com;"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script src="/scripts/customElements.js" defer></script>
+    <script src="/scripts/main.js" defer></script>
 
-  <title>Teagan Clayton</title>
-</head>
-<body>
+    <title>Teagan Clayton</title>
+  </head>
+  <body>
     <header id="header" class="container"></header>
     <main class="container">
       <section id="about">
         <h2>About</h2>
-        <p>I'm Teagan, a junior developer currently based in the Canadian Maritimes. Graduated with a college diploma in Mobile Application Design & Development from Algonquin College in Ottawa. I specialize in cross-platform, responsive, and accessible web design, including mobile-first website development.</p>
-        <p>I have a background in interdisciplinary arts and still have a passion for the scene which can be seen in my projects. I also have a passion for retro technology. This background gives me a particular interest in creative, user friendly solutions, and making the most out of limitations.</p>
+        <p>
+          I'm Teagan, a junior developer currently based in the Canadian
+          Maritimes. Graduated with a college diploma in Mobile Application
+          Design & Development from Algonquin College in Ottawa. I specialize in
+          cross-platform, responsive, and accessible web design, including
+          mobile-first website development.
+        </p>
+        <p>
+          I have a background in interdisciplinary arts and still have a passion
+          for the scene which can be seen in my projects. I also have a passion
+          for retro technology. This background gives me a particular interest
+          in creative, user friendly solutions, and making the most out of
+          limitations.
+        </p>
         <p><a href="">Download my resume.</a></p>
       </section>
       <section id="highlights">
         <h2>Highlights</h2>
         <div class="gallery">
-          <highlight-card 
+          <highlight-card
             link="/works/casm-wayfinding.html"
-            image-src="/assets/wayfinding-0.png" 
-            alt="Screenshot of the app" 
-            heading="Wayfinding App for the Visually Impaired" 
-            text="PWA developed for the Canadian Aviation and Space Museum.">
+            image-src="/assets/wayfinding-0.png"
+            alt="Screenshot of the app"
+            heading="Wayfinding App for the Visually Impaired"
+            text="PWA developed for the Canadian Aviation and Space Museum."
+          >
           </highlight-card>
-          <highlight-card 
+          <highlight-card
             link="/works/indie-artists.html"
-            image-src="/assets/indie-0.png" 
-            alt="Screenshot of the website" 
-            heading="The Online Indie Artists Club" 
-            text="Created a website for a volunteer-ran online artist collective.">
+            image-src="/assets/indie-0.png"
+            alt="Screenshot of the website"
+            heading="The Online Indie Artists Club"
+            text="Created a website for a volunteer-ran online artist collective."
+          >
           </highlight-card>
         </div>
         <p><a href="">See all projects.</a></p>
@@ -47,21 +64,34 @@
       <section id="skills">
         <h2>Skills</h2>
         <h3>Stacks</h3>
-        <p>These are the ones that I use most often, enjoy, or have completed projects in that can be seen in my portfolio.</p>
+        <p>
+          These are the ones that I use most often, enjoy, or have completed
+          projects in that can be seen in my portfolio.
+        </p>
         <div class="icon-gallery"></div>
         <h3>Experimented Stacks</h3>
-        <p>Ones I have done small projects in and would like to expand on further.</p>
+        <p>
+          Ones I have done small projects in and would like to expand on
+          further.
+        </p>
         <div class="icon-gallery"></div>
         <h3>Programs</h3>
         <div class="icon-gallery"></div>
       </section>
       <section id="now">
         <h2>Now</h2>
-        <p>Now that I've graduated, I've been busy making the move back home. Catching up, looking for a place to live and work, all that jazz. I took on some work-trade projects in order to practice my skills further, and have been looking into some other small projects to practice new things. Most recently, I've been learning TypeScript (all around useful) and Astro (which is fun, lightweight, and is what this site is built with!).</p>
+        <p>
+          Now that I've graduated, I've been busy making the move back home.
+          Catching up, looking for a place to live and work, all that jazz. I
+          took on some work-trade projects in order to practice my skills
+          further, and have been looking into some other small projects to
+          practice new things. Most recently, I've been learning TypeScript (all
+          around useful) and Astro (which is fun, lightweight, and is what this
+          site is built with!).
+        </p>
         <p><a href="https://nownownow.com/about">Why now?</a></p>
       </section>
     </main>
     <footer id="footer" class="container"></footer>
-
-</body>
+  </body>
 </html>
